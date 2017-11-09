@@ -34,7 +34,7 @@ const getters = {
             // console.info('product',product)
             return {
                 ...product,
-                num                
+                num
             }
         })
     },
@@ -74,11 +74,6 @@ const actions = {
     delProduct({commit},product){
         commit('del',product)
     },
-    //减少商品的数量
-    reduceProduct({commit},product){
-        commit('reduceShop',product)
-    }
-    
 }
 
 //mutation
@@ -96,10 +91,6 @@ const mutations = {
         }
         // console.info(record)
 
-        //给shop_list原数据添加一个标记
-        let record2 = state.shop_list.find(n=>n.id == id);
-        record2.num = 1
-    
     },
     //清除购物车
     clearAll(state){
@@ -116,18 +107,6 @@ const mutations = {
             }
         })
     },
-
-    //减少商品的数量
-    // reduceShop(state,product){
-    //     let obj = state.added.find(n=>n.id == product.id)
-    //     console.info('obj',obj)
-       
-    //     if(obj.num>0){
-    //         obj.num -- 
-    //     }else {
-    //         obj.num  == 0
-    //     }
-    // }
 }
 
 

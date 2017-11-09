@@ -1,6 +1,6 @@
 <template>
   <div class="product">
-  
+
     <h4>商品信息</h4>
     <table class="table table-hover table-bordered">
       <thead>
@@ -17,16 +17,15 @@
           <td>{{shop.name}}</td>
           <td>{{shop.price}}</td>
           <td>
-            <div @click='addToCart(shop)' class="btn btn-info">{{shop.num ? '+' : '购物车'}}</div>
-            <!-- <div @click='reduceProduct(shop)' class="btn btn-warning" v-if='shop.num&&shop.num>0'>-</div> -->
+            <div @click='addToCart(shop)' class="btn btn-info">购物车</div>
           </td>
         </tr>
       </tbody>
     </table>
-  
-  
-  
-  
+
+
+
+
   </div>
 </template>
 
@@ -35,7 +34,7 @@
     mapGetters,
     mapActions
   } from "vuex";
-  
+
   export default {
     name: 'product',
     data() {
@@ -45,10 +44,10 @@
       ...mapGetters(['shoplist'])
     },
     mounted() {
-  
+
     },
     methods: {
-      ...mapActions(['addToCart','reduceProduct'])
+      ...mapActions(['addToCart'])
     }
   }
 </script>
@@ -57,14 +56,14 @@
   .table-shop>th {
     text-align: center;
   }
-  
+
   .item-wrapper {
     display: flex;
     background-color: #dfdfdf;
     align-items: center;
     justify-content: center;
   }
-  
+
   .item {
     flex: 1;
   }
