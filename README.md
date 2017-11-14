@@ -1,4 +1,5 @@
 # vuex-shopcart
+[DEMO](https://liuxingzhijian1320.github.io/vuex-shopcart/index.html)
 
 > vuex实现的简单的demo
 
