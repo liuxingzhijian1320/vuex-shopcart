@@ -4,9 +4,9 @@
 
 ### 1. master 分支： vue2+vuex 版本
 
-### 2. vue2 分支： vue2 版本
+### 2. vue3 分支： vue3 版本(正在开发中)
 
-### 3. vue3 分支： vue3 版本
+### 3. vue2_vuex 分支： vue2+vuex 版本
 
 # 安装依赖
 
