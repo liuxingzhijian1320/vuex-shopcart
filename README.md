@@ -8,6 +8,10 @@
 
 ### 3. vue3 分支 ===> 购物车 vue3 版本
 
+知识点：
+
+- 使用 vue3 新特性： defineComponent, reactive, onMounted, toRefs, ref, computed 等。
+
 # 安装依赖
 
 npm install
