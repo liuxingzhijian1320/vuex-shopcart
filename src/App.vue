@@ -78,7 +78,7 @@ import {
   ref,
   computed,
 } from "vue";
-import { StateDataProps } from "./useProps";
+import { StateDataProps, ParamsProps } from "./useProps";
 
 const state: StateDataProps = {
   //商品列表
@@ -112,24 +112,23 @@ export default defineComponent({
   name: "APP",
   setup(props, context) {
     const { shop_list, added: cartProducts } = state;
-    const totalNum = ref(0);
 
-    const data = reactive({
+    let data = reactive({
       shop_list,
       cartProducts,
     });
 
     // 添加购物车
-    const addToCart = (shop) => {
+    const addToCart = (shop: ParamsProps) => {
       const { id } = shop;
       let record = data.cartProducts.find((n) => n.id == id);
-      if (!record) {
+      if (record && record.num) {
+        record.num++;
+      } else {
         data.cartProducts.push({
           ...shop,
           num: 1,
         });
-      } else {
-        record.num++;
       }
     };
 
