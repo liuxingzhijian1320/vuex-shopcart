@@ -1,24 +1,21 @@
-# zhihu
+# shopcart 购物车
 
-## Project setup
-```
-yarn install
-```
+[DEMO](https://liuxingzhijian1320.github.io/vuex-shopcart/index.html)
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+### 1. master 分支 ===> 购物车 vue3 版本
 
-### Compiles and minifies for production
-```
-yarn build
-```
+### 2. vue2 分支 ===> 购物车 vue2 版本
 
-### Lints and fixes files
-```
-yarn lint
-```
+### 3. vue3 分支 ===> 购物车 vue3 版本
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# 安装依赖
+
+npm install
+
+# 启动 server
+
+npm run dev
+
+# 编译发布
+
+npm run build
