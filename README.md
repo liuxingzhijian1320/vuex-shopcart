@@ -2,6 +2,9 @@
 
 [DEMO](https://liuxingzhijian1320.github.io/vuex-shopcart/index.html)
 
+效果图：
+![](./src/assets/images/example.png)
+
 ### 1. master 分支 ===> 购物车 vue3 版本
 
 ### 2. vue2 分支 ===> 购物车 vue2 版本
