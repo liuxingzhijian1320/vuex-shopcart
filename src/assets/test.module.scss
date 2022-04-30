@@ -1,0 +1,7 @@
+// 特殊的命名格式【xxxxx.module.scss】可以直接引入js中使用 
+$menuText:#bfcbd9;
+$menuActiveText:#409EFF;
+:export {
+    menuText: $menuText;
+    menuActiveText: $menuActiveText;
+}
